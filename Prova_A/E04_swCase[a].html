@@ -12,11 +12,22 @@
     //DICA: Use PR para Programação, DW para Desenvolvimento Web, BD para Banco de Dados.
 
     //ENTRADA
-
-
+    const disciplina = prompt("informe qual disciplina que deseja se matricular no Curso de Informática ")
+    let resultadoNaTela
     //PROCESSAMENTO
+    switch (disciplina) {
+        case "Programação": resultadoNaTela = "Corajoso(a)"
 
+            break;
+        case "Desenvolvimento Web": resultadoNaTela = "Ousado(a)"
+            break;
+        case "Banco de Dados": resultadoNaTela = "Confiante"
+            break;
+
+        default: resultadoNaTela = "Disciplina inválida"
+            break;
+    }
 
     //SAÍDA
-
+    document.write(resultadoNaTela)
 </script>

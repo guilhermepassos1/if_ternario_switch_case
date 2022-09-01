@@ -9,11 +9,16 @@
     //Apresente a mensagem final, de acordo com o cenário descrito acima.
 
     //ENTRADA
-
-
+const mediaTurma1 = Number(prompt("Qual a média da primeira turma ?"))
+const mediaTurma2 = Number(prompt("Qual a média da segunda turma ?"))
+const mediaTurma3 = Number(prompt("Qual a média da terceira turma ?"))
+const mediaTurma4 = Number(prompt("Qual a média da quarta turma ?"))
+const mediaTurma5 = Number(prompt("Qual a média da quinta turma ?"))
+let resultadoNaTela
     //PROCESSAMENTO
-
-
+(((mediaTurma1 + mediaTurma2 + mediaTurma3 + mediaTurma4 + mediaTurma5) / 5 )<= 4) ? resultadoNaTela = "+- 50 alunos reprovados." 
+: (((mediaTurma1 + mediaTurma2 + mediaTurma3 + mediaTurma4 + mediaTurma5) / 5 )<= 7) ? resultadoNaTela = "+- 20 alunos reprovados" 
+: resultadoNaTela = "+- 8 alunos reprovados"
     //SAÍDA
-
+document.write(resultadoNaTela)
 </script>
